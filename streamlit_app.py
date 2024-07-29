@@ -25,8 +25,8 @@ ingredients_list = st.multiselect(
     max_selections=5
 )
 
-fruit_response = requests.get("https://fruityvice.com/api/fruit/wetermelon")
-st.text(fruit_response)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
 
 if ingredients_list:
     #st.write(ingredients_list)
